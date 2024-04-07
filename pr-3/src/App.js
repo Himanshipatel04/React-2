@@ -1,10 +1,14 @@
 import React from 'react'
-import UserContextProvider from './context/UserContextProvider'
+import UsContextProvider from './context/UsContextProvider'
+import Login from './components/Login'
+import Profile from './components/Profile'
 
 const App = () => {
   return (
-    <UserContextProvider>
-    </UserContextProvider>
+   <UsContextProvider>
+   <Login/>
+   <Profile/>
+   </UsContextProvider>
   )
 }
 
